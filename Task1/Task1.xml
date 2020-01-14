@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Task1</name>
+    </assembly>
+    <members>
+        <member name="T:Task1.Population">
+            <summary>
+            The main class that is being tested.
+            </summary>
+        </member>
+        <member name="M:Task1.Population.GetYears(System.Int32,System.Double,System.Int32,System.Int32)">
+            <summary>
+            Method which get how many years does the town need to have population greater or equal to currentPopulation inhabitants.
+            </summary>
+            <param name="initialPopulation"> The population at the beginning of a year. </param>
+            <param name="percent"> By so many percent the population increases every year. </param>
+            <param name="visitors"> New inhabitants per year. </param>
+            <param name="currentPopulation"> Number of inhabitants at the moment. </param>
+            <returns> years does the town need to have population greater or equal to currentPopulation inhabitants. </returns>
+        </member>
+    </members>
+</doc>

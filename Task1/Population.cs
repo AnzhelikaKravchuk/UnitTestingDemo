@@ -1,11 +1,7 @@
-﻿// <copyright file="Population.cs" company="PlaceholderCompany">
-// Copyright (c) PlaceholderCompany. All rights reserved.
-// </copyright>
+﻿using System;
 
 namespace Task1
 {
-    using System;
-
     /// <summary>
     /// Class containing population data processing methods.
     /// </summary>
@@ -28,7 +24,7 @@ namespace Task1
 
             if (percent < 0d || percent > 100d)
             {
-                throw new ArgumentOutOfRangeException("Value of percents cannot be less then 0 % or more then 100 %.");
+                throw new ArgumentOutOfRangeException(nameof(percent), "Value of percents cannot be less then 0 % or more then 100 %.");
             }
 
             if (visitors < 0)

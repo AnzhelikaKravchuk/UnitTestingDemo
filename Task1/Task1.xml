@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Task1</name>
+    </assembly>
+    <members>
+        <member name="T:Task1.Population">
+            <summary>
+            Includes GetYears method.
+            </summary>
+        </member>
+        <member name="M:Task1.Population.GetYears(System.Int32,System.Double,System.Int32,System.Int32)">
+            <summary>
+            This method counts how many years passed before initial population reached current value.
+            </summary>
+            <param name="initialPopulation">Initial population of a town/country.</param>
+            <param name="percent">By how many percents initial population increases.</param>
+            <param name="visitors">How many new inhabitants have come.</param>
+            <param name="currentPopulation">Current population of a town/country.</param>
+            <returns>How many years passed before initial population reached current value.</returns>
+            <exception cref="M:System.ArgumentException.#ctor">In case amount of people is less or equals zero.</exception>
+            <exception cref="M:System.ArgumentOutOfRangeException.#ctor">If percentage is below zero or above 100.</exception>
+        </member>
+    </members>
+</doc>

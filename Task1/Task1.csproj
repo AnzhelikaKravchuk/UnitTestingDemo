@@ -3,6 +3,15 @@
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
         <LangVersion>8</LangVersion>
+        <CodeAnalysisRuleSet>..\code-analysis.ruleset</CodeAnalysisRuleSet>
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        <PrivateAssets>all</PrivateAssets>
+      </PackageReference>
+      <AdditionalFiles Include="..\code-analysis.ruleset" Link="Properties\code-analisys.ruleset" />
+    </ItemGroup>
 
 </Project>

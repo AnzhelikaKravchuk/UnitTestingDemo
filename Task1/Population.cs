@@ -26,7 +26,7 @@
 
             if (percent < 0 || percent > 100)
             {
-                throw new ArgumentOutOfRangeException("Value of percents cannot be less than 0% or more than 100%.");
+                throw new ArgumentOutOfRangeException(nameof(percent), "Value of percent cannot be less than 0% or more than 100%.");
             }
 
             if (visitors <= 0)
@@ -35,18 +35,13 @@
             }
 
             int years = 0;
-            while (true)
+            while (initialPopulation < currentPopulation)
             {
                 initialPopulation = initialPopulation + (int)(initialPopulation * percent / 100) + visitors;
-                if (initialPopulation >= currentPopulation)
-                {
-                    return ++years;
-                }
-                else
-                {
-                    years++;
-                }
+                years++;
             }
+
+            return years;
         }
     }
 }

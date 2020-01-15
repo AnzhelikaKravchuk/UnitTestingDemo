@@ -37,7 +37,7 @@ namespace Task1
 
             if (percent < 0 || percent > 100)
             {
-                throw new ArgumentOutOfRangeException("Value of percents cannot be less then 0% or more then 100%.", new Exception());
+                throw new ArgumentOutOfRangeException(nameof(percent), "Value of percents cannot be less then 0% or more then 100%.");
             }
 
             if (visitors < 0)

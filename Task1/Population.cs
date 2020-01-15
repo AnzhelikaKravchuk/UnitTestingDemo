@@ -31,22 +31,34 @@ namespace Task1
         /// </exception>
         public static int GetYears(int initialPopulation, double percent, int visitors, int currentPopulation)
         {
-           return initialPopulation <= 0 ? throw new ArgumentException("Initial population cannot be less or equals zero.") :
-           percent < 0 || percent > 100 ? throw new ArgumentOutOfRangeException(nameof(percent), "Value of percents cannot be less then 0% or more then 100%.") :
-           visitors <= 0 ? throw new ArgumentException("Count of visitors cannot be less zero.") :
-           currentPopulation <= 0 ? throw new ArgumentException("Current population cannot be less or equals zero.") : Result();
-
-           int Result()
-           {
-                double populationIncreaseRate = 1d + (percent / 100d);
-                int years = 0;
-                for (double nextYearPopulation = initialPopulation; nextYearPopulation < currentPopulation; years++)
-                {
-                    nextYearPopulation = (nextYearPopulation * populationIncreaseRate) + visitors;
-                }
-
-                return years;
+            if (initialPopulation <= 0)
+            {
+                throw new ArgumentException("Initial population cannot be less or equals zero.");
             }
+
+            if (percent < 0 || percent > 100)
+            {
+                throw new ArgumentOutOfRangeException(nameof(percent), "Value of percents cannot be less then 0% or more then 100%.");
+            }
+
+            if (visitors <= 0)
+            {
+                throw new ArgumentException("Count of visitors cannot be less zero.");
+            }
+
+            if (currentPopulation <= 0)
+            {
+                throw new ArgumentException("Current population cannot be less or equals zero.");
+            }
+
+            double populationIncreaseRate = 1d + (percent / 100d);
+            int years = 0;
+            for (double nextYearPopulation = initialPopulation; nextYearPopulation < currentPopulation; years++)
+            {
+                nextYearPopulation = (nextYearPopulation * populationIncreaseRate) + visitors;
+            }
+
+            return years;
         }
     }
 }

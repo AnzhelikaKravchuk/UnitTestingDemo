@@ -4,7 +4,6 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <LangVersion>8</LangVersion>
     <CodeAnalysisRuleSet>code-analysis.ruleset</CodeAnalysisRuleSet>
-    <NoWarn>$(NoWarn),1573,1591,1712</NoWarn>
     <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
 
   </PropertyGroup>

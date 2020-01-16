@@ -22,17 +22,6 @@ namespace Task1
             return (initialPopulation <= currentPopulation) ? CalculateYears(initialPopulation, percent, visitors, currentPopulation) : 0;
         }
 
-        /// <summary>
-        /// Validates input parameters.
-        /// </summary>
-        /// <param name="initialPopulation">Initial population.</param>
-        /// <param name="percent">Annual growth.</param>
-        /// <param name="visitors">Number of annual visitors.</param>
-        /// <param name="currentPopulation">Current population.</param>
-        /// <exception cref="ArgumentException">Thrown when initial or current population
-        /// is less than or equal to 0 or when the number of annual visitors is negative.</exception>
-        /// <exception cref="ArgumentOutOfRangeException">Thrown when annual growth percentage
-        /// is less than 0% or greater than 100%.</exception>
         private static void Validate(int initialPopulation, double percent, int visitors, int currentPopulation)
         {
             if (initialPopulation <= 0)
@@ -56,14 +45,6 @@ namespace Task1
             }
         }
 
-        /// <summary>
-        /// Calculates the number of years it takes a population to exceed currentPopulation.
-        /// </summary>
-        /// <param name="initialPopulation">Initial population.</param>
-        /// <param name="percent">Annual growth.</param>
-        /// <param name="visitors">Number of annual visitors.</param>
-        /// <param name="currentPopulation">Current population.</param>
-        /// <returns>Number of years it takes a population to exceed currentPopulation.</returns>
         private static int CalculateYears(int initialPopulation, double percent, int visitors, int currentPopulation)
         {
             int counter = 0;

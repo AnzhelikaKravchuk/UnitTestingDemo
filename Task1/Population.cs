@@ -2,8 +2,24 @@
 
 namespace Task1
 {
+    /// <summary>
+    /// The Population class.
+    /// Contains all methods for performing calculating of population.
+    /// </summary>
     public static class Population
     {
+        /// <summary>
+        /// Counts how many years does the town need to pass to reach currentPopulation value.
+        /// </summary>
+        /// <param name="initialPopulation">Initial population of a town.</param>
+        /// <param name="percent">Initial population increasing percents per year.</param>
+        /// <param name="visitors">Visitors of a town per year.</param>
+        /// <param name="currentPopulation">Current population of a town.</param>
+        /// <exception cref="ArgumentException()">Handle to avoid amount of people is less or equals zero.</exception>
+        /// <exception cref="ArgumentOutOfRangeException()">Handle to avoid value of percents is not in [0..100] range.</exception>
+        /// <returns>
+        /// How many years does the town need to pass to reach currentPopulation value.
+        /// </returns>
         public static int GetYears(int initialPopulation, double percent, int visitors, int currentPopulation)
         {
             if (initialPopulation <= 0)

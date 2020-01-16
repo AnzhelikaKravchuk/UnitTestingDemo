@@ -21,17 +21,17 @@ namespace Task1
         {
             if (initialPopulation <= 0)
             {
-                throw new ArgumentException("Initial population cannot be zero or below.");
+                throw new ArgumentException("Initial population cannot be zero or below.", nameof(initialPopulation));
             }
 
             if (visitors < 0)
             {
-                throw new ArgumentException("Annual visitors cannot be less than zero");
+                throw new ArgumentException("Annual visitors cannot be less than zero", nameof(visitors));
             }
 
             if (currentPopulation <= 0)
             {
-                throw new ArgumentException("Current population cannot be zero or below.");
+                throw new ArgumentException("Current population cannot be zero or below.", nameof(currentPopulation));
             }
 
             if (percent < 0 || percent > 100)

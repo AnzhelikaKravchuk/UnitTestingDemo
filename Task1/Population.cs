@@ -32,7 +32,7 @@ namespace Task1
         {
             if (initialPopulation <= 0)
             {
-                throw new ArgumentException("Initial population cannot be less or equals zero.");
+                throw new ArgumentException("Initial population cannot be less or equals zero.", nameof(initialPopulation));
             }
 
             if (percent < 0 || percent > 100)
@@ -42,12 +42,12 @@ namespace Task1
 
             if (visitors < 0)
             {
-                throw new ArgumentException("Count of visitors cannot be less zero.");
+                throw new ArgumentException("Count of visitors cannot be less zero.", nameof(visitors));
             }
 
             if (currentPopulation <= 0)
             {
-                throw new ArgumentException("Current population cannot be less or equals zero.");
+                throw new ArgumentException("Current population cannot be less or equals zero.", nameof(currentPopulation));
             }
 
             int counter = 0;

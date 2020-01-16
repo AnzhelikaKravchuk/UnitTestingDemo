@@ -26,9 +26,10 @@ namespace Task1.Tests
         public void GetYearsTest_InitialPopulation_LessOrEqualsZero_ThrowArgumentException(int initialPopulation,
             double percent, int visitors, int currentPopulation)
         {
-            Assert.Throws<ArgumentException>(() =>
+            Assert.Throws<ArgumentException>(
+                () =>
                     Population.GetYears(initialPopulation, percent, visitors, currentPopulation),
-                "Initial population cannot be less or equals zero.");
+                    "Initial population cannot be less or equals zero.");
         }
 
         [TestCase(1500, 101, 100, 5000)]

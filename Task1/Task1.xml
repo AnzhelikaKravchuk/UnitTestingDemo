@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Task1</name>
+    </assembly>
+    <members>
+        <member name="T:Task1.Population">
+            <summary>
+            The main class of the project.
+            </summary>
+        </member>
+        <member name="M:Task1.Population.GetYears(System.Int32,System.Double,System.Int32,System.Int32)">
+            <summary>
+            Counts how many years will pass before the population reaches the desired size.
+            </summary>
+            <param name="initialPopulation">The initial number of settlers. </param>
+            <param name="percent">Population growth rate percent. </param>
+            <param name="visitors">The number of people coming every year. </param>
+            <param name="currentPopulation">Required size of population. </param>
+            <returns>Сount of years. </returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            Occurs when percent values are out of the range of 0 to 100.
+            </exception>
+            <exception cref="T:System.ArgumentException">
+            Occurs when initialPopulation less or equal zero or
+            count of visitors less than zero or
+            current population less or equals zero.
+            </exception>
+            <example>
+            <code>
+            int year = GetYears(1500, 5, 100, 5000)
+            </code>
+            </example>
+        </member>
+    </members>
+</doc>

@@ -32,7 +32,7 @@ namespace Task1
 
             if (percent < 0 || percent > 100)
             {
-                throw new ArgumentOutOfRangeException("Invalid parameters of percent");
+                throw new ArgumentOutOfRangeException(nameof(percent), "cannot be less than 0% or mre than 100%");
             }
 
             int years = 0;

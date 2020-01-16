@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Task1</name>
+    </assembly>
+    <members>
+        <member name="T:Task1.Population">
+            <summary>
+            The Population class.
+            Contains all methods for performing calculating of population.
+            </summary>
+        </member>
+        <member name="M:Task1.Population.GetYears(System.Int32,System.Double,System.Int32,System.Int32)">
+            <summary>
+            Counts how many years does the town need to pass to reach currentPopulation value.
+            </summary>
+            <param name="initialPopulation">Initial population of a town.</param>
+            <param name="percent">Initial population increasing percents per year.</param>
+            <param name="visitors">Visitors of a town per year.</param>
+            <param name="currentPopulation">Current population of a town.</param>
+            <exception cref="M:System.ArgumentException.#ctor">Handle to avoid amount of people is less or equals zero.</exception>
+            <exception cref="M:System.ArgumentOutOfRangeException.#ctor">Handle to avoid value of percents is not in [0..100] range.</exception>
+            <returns>
+            How many years does the town need to pass to reach currentPopulation value.
+            </returns>
+        </member>
+    </members>
+</doc>

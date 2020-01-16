@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Task1</name>
+    </assembly>
+    <members>
+        <member name="T:Task1.Population">
+            <summary>
+            This is Population class.
+            </summary>
+        </member>
+        <member name="M:Task1.Population.GetYears(System.Int32,System.Double,System.Int32,System.Int32)">
+            <summary>
+            This method returns the number of years that a city needs for its population to increase.
+            </summary>
+            <param name="initialPopulation">InitialPopulation is the population at the beginning of a year.</param>
+            <param name="percent">The percentage by which the population increases per year.</param>
+            <param name="visitors">Number of visitors per year.</param>
+            <param name="currentPopulation">Current population of the city.</param>
+            <returns>Number of years.</returns>
+        </member>
+    </members>
+</doc>

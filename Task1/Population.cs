@@ -15,6 +15,8 @@ namespace Task1
         /// <param name="visitors"> New inhabitants per year. </param>
         /// <param name="currentPopulation"> Current population. </param>
         /// <returns> Years quantity. </returns>
+        /// <exception type = "ArgumentException"> initialPopulation, currentPopulation is less or equals zero. -or- visitors is is less than zero.</exception>
+        /// <exception type = "ArgumentOutOfRangeException"> percents is less then 0 % or more then 100 %.</exception>
         public static int GetYears(int initialPopulation, double percent, int visitors, int currentPopulation)
         {
             if (initialPopulation <= 0)

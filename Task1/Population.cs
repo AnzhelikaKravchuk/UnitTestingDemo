@@ -19,12 +19,22 @@ namespace Task1
         {
             if (percent < 0 || percent > 100)
             {
-                throw new ArgumentOutOfRangeException($"Invalid percent parameters.");
+                throw new ArgumentOutOfRangeException(nameof(percent), "Invalid percent parameters.");
             }
 
-            if (initialPopulation <= 0 || visitors <= 0 || currentPopulation <= 0)
+            if (initialPopulation <= 0)
             {
-                throw new ArgumentException("Invalid parameters of current population, initial population or visitors.");
+                throw new ArgumentException("Invalid parameters of initial population.");
+            }
+
+            if (visitors <= 0)
+            {
+                throw new ArgumentException("Invalid parameters of visitors.");
+            }
+
+            if (currentPopulation <= 0)
+            {
+                throw new ArgumentException("Invalid parameters of current population.");
             }
 
             int years = 0;

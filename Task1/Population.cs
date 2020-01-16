@@ -16,23 +16,15 @@ namespace Task1
         /// <param name="visitors">Imigrants which come per year.</param>
         /// <param name="currentPopulation">Current population of town.</param>
         /// <returns>The count of years needed to reach currentPopulation.</returns>
+        /// <exception cref="ArgumentException">Thrown when initialPopulation or currentPopulation or visitors less or equal to zero.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when percent is less than zero or greater than hundred.</exception>
         public static int GetYears(int initialPopulation, double percent, int visitors, int currentPopulation)
         {
-            /// <exception cref="ArgumentException"> this params
-            /// <paramref name="initialPopulation"/>
-            /// <paramref name="currentPopulation"/>
-            /// <paramref name="visitors"/>
-            /// cannot accept value less or equal to zero.
-            /// </exception>
             if (initialPopulation <= 0 || currentPopulation <= 0 || visitors <= 0)
             {
                 throw new ArgumentException(string.Empty);
             }
 
-            /// <exception cref="ArgumentOutOfRangeException"> this params
-            /// <paramref name="percent"/>
-            /// cannot accept value less than 0 or greater than > 100.
-            /// </exception>
             if (percent < 0 || percent > 100)
             {
                 throw new ArgumentOutOfRangeException(string.Empty);
@@ -46,7 +38,6 @@ namespace Task1
             }
 
             return years;
-            throw new NotImplementedException();
         }
     }
 }

@@ -19,24 +19,11 @@ namespace Task1
         /// <exception cref="ArgumentException">Thrown when initial population is less than 1 or current population is less than or equal to initial population or count of visitors is less than or equal to zero.</exception>
         public static int GetYears(int initialPopulation, double percent, int visitors, int currentPopulation)
         {
-            if (initialPopulation >= currentPopulation)
-            {
-                throw new ArgumentException("Current population must be more than initial population");
-            }
-            else if (initialPopulation <= 0)
-            {
-                throw new ArgumentException("Initial population must be more than 0");
-            }
-            else if (visitors <= 0)
-            {
-                throw new ArgumentException("Amount of visitors must be more than 0");
-            }
-            else if (percent <= 0 || percent > 100)
-            {
-                throw new ArgumentOutOfRangeException(nameof(percent), "Rate of increase must be more than 0 and less than or equal to 100");
-            }
+            int years = initialPopulation >= currentPopulation ? throw new ArgumentException("Current population must be more than initial population", nameof(currentPopulation)) :
+                initialPopulation <= 0 ? throw new ArgumentException("Initial population must be more than 0", nameof(initialPopulation)) :
+                visitors <= 0 ? throw new ArgumentException("Amount of visitors must be more than 0", nameof(visitors)) :
+                percent <= 0 || percent > 100 ? throw new ArgumentOutOfRangeException(nameof(percent), "Rate of increase must be more than 0 and less than or equal to 100") : 0;
 
-            int years = 0;
             while (initialPopulation < currentPopulation)
             {
                 years++;

@@ -22,12 +22,12 @@ namespace Task1
         {
             if (initialPopulation <= 0 || currentPopulation <= 0 || visitors <= 0)
             {
-                throw new ArgumentException(string.Empty);
+                throw new ArgumentException("Invalid parameter values.");
             }
 
             if (percent < 0 || percent > 100)
             {
-                throw new ArgumentOutOfRangeException(string.Empty);
+                throw new ArgumentOutOfRangeException(nameof(percent));
             }
 
             int years = 0;

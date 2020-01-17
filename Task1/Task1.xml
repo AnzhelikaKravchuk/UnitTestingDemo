@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Task1</name>
+    </assembly>
+    <members>
+        <member name="T:Task1.Population">
+            <summary>Provides a <see cref="M:Task1.Population.GetYears(System.Int32,System.Double,System.Int32,System.Int32)"/> method.</summary>
+        </member>
+        <member name="M:Task1.Population.GetYears(System.Int32,System.Double,System.Int32,System.Int32)">
+            <summary>Gets the number of years needed tower to see its population greater or equal to <em>currentPopulation</em> inhabitants.</summary>
+            <param name="initialPopulation">The population at the beginning of a year.</param>
+            <param name="percent">Part of <em>initialPopulation</em> by which the population is increasing.</param>
+            <param name="visitors">New inhabitants per year.</param>
+            <param name="currentPopulation">Current population inhabitants.</param>
+            <returns>Returns the number of years.</returns>
+            <exception cref="T:System.ArgumentException">Thrown when <em>initialPopulation</em> or <em>visitors</em> or <em>currentPopulation</em> have an invalid value.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when <em>percent</em> have an invalid value.</exception>
+        </member>
+    </members>
+</doc>

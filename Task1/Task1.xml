@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Task1</name>
+    </assembly>
+    <members>
+        <member name="T:Task1.Population">
+            <summary>
+            Class that discribeы population.
+            </summary>
+        </member>
+        <member name="M:Task1.Population.GetYears(System.Int32,System.Double,System.Int32,System.Int32)">
+            <summary>
+            Сonsiders how many years the town needs to see its population greater or equal to currentPopulation inhabitants.
+            </summary>
+            <param name="initialPopulation">the population at the beginning of a year.</param>
+            <param name="percent">number of regular increase in residents.</param>
+            <param name="visitors">new inhabitants per year.</param>
+            <param name="currentPopulation">current population inhabitants.</param>
+            <returns>How many years does the town need to see its population greater or equal to currentPopulation inhabitants.</returns>
+        </member>
+    </members>
+</doc>

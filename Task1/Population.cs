@@ -25,6 +25,12 @@ namespace Task1
         /// <returns>
         /// How many years meet the requirement.
         /// </returns>
+        /// /// /// <exception cref="System.ArgumentException">
+        /// Initial population cannot be less or equals zero.
+        ///  </exception>
+        /// /// <exception cref="System.ArgumentOutOfRangeException">
+        /// Value of percents cannot be less then 0% or more then 100%.
+        ///  </exception>
         public static int GetYears(int initialPopulation, double percent, int visitors, int currentPopulation)
         {
             if (initialPopulation <= 0 || visitors <= 0 || currentPopulation <= 0)
@@ -34,7 +40,7 @@ namespace Task1
 
             if (percent < 0 || percent > 100)
             {
-                throw new ArgumentOutOfRangeException("Value of percents cannot be less then 0% or more then 100%.");
+                throw new ArgumentOutOfRangeException(nameof(percent), "Value of percents cannot be less then 0% or more then 100%.");
             }
 
             int sumYears = 0;

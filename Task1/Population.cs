@@ -15,21 +15,23 @@ namespace Task1
         /// <param name="visitors">new inhabitants per year.</param>
         /// <param name="currentPopulation">current population inhabitants.</param>
         /// <returns>How many years does the town need to see its population greater or equal to currentPopulation inhabitants.</returns>
+        /// <exception cref="System.ArgumentException">Thrown when initial population, current population or count of visitors less or equals zero.</exception>
+        /// <exception cref="System.ArgumentOutOfRangeException">Thrown when value of percents are less then 0% or more then 100%.</exception>
         public static int GetYears(int initialPopulation, double percent, int visitors, int currentPopulation)
         {
             if (initialPopulation <= 0)
             {
-                throw new ArgumentException("Initial population cannot be less or equals zero.");
+                throw new ArgumentException("Initial population cannot be less or equals zero.", nameof(visitors));
             }
 
             if (currentPopulation <= 0)
             {
-                throw new ArgumentException("Current population cannot be less or equals zero.");
+                throw new ArgumentException("Current population cannot be less or equals zero.", nameof(visitors));
             }
 
             if (visitors < 0)
             {
-                throw new ArgumentException("Count of visitors cannot be less zero.");
+                throw new ArgumentException("Count of visitors cannot be less zero.", nameof(visitors));
             }
 
             if (percent < 0 || percent > 100)

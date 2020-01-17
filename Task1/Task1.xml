@@ -18,29 +18,10 @@
             <param name="visitors">Number of annual visitors.</param>
             <param name="currentPopulation">Current population.</param>
             <returns>Number of years it takes a population to exceed currentPopulation.</returns>
-        </member>
-        <member name="M:Task1.Population.Validate(System.Int32,System.Double,System.Int32,System.Int32)">
-            <summary>
-            Validates input parameters.
-            </summary>
-            <param name="initialPopulation">Initial population.</param>
-            <param name="percent">Annual growth.</param>
-            <param name="visitors">Number of annual visitors.</param>
-            <param name="currentPopulation">Current population.</param>
             <exception cref="T:System.ArgumentException">Thrown when initial or current population
             is less than or equal to 0 or when the number of annual visitors is negative.</exception>
             <exception cref="T:System.ArgumentOutOfRangeException">Thrown when annual growth percentage
             is less than 0% or greater than 100%.</exception>
-        </member>
-        <member name="M:Task1.Population.CalculateYears(System.Int32,System.Double,System.Int32,System.Int32)">
-            <summary>
-            Calculates the number of years it takes a population to exceed currentPopulation.
-            </summary>
-            <param name="initialPopulation">Initial population.</param>
-            <param name="percent">Annual growth.</param>
-            <param name="visitors">Number of annual visitors.</param>
-            <param name="currentPopulation">Current population.</param>
-            <returns>Number of years it takes a population to exceed currentPopulation.</returns>
         </member>
     </members>
 </doc>

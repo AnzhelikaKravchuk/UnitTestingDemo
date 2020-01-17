@@ -15,6 +15,10 @@ namespace Task1
         /// <param name="visitors">Number of annual visitors.</param>
         /// <param name="currentPopulation">Current population.</param>
         /// <returns>Number of years it takes a population to exceed currentPopulation.</returns>
+        /// <exception cref="ArgumentException">Thrown when initial or current population
+        /// is less than or equal to 0 or when the number of annual visitors is negative.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when annual growth percentage
+        /// is less than 0% or greater than 100%.</exception>
         public static int GetYears(int initialPopulation, double percent, int visitors, int currentPopulation)
         {
             Validate(initialPopulation, percent, visitors, currentPopulation);

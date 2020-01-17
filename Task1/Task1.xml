@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Task1</name>
+    </assembly>
+    <members>
+        <member name="T:Task1.Population">
+            <summary>
+            This class helps to find how many years does the town need to see its population greater or equal to current population.
+            </summary>
+        </member>
+        <member name="M:Task1.Population.GetYears(System.Int32,System.Double,System.Int32,System.Int32)">
+            <summary>
+            This method helps to count how much years must pass to get current population.
+            </summary>
+            <param name="initialPopulation">Amount of people, living in a town, at the beginning.</param>
+            <param name="percent">Rate of increase of the population.</param>
+            <param name="visitors">New inhabitants per year, which came to live in the town.</param>
+            <param name="currentPopulation">Inhabitants of the town at the moment.</param>
+            <returns>Amount of years the town needs to see its population greater or equal to current population.</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when rate of increase is less than or equal to 0 or more than 100.</exception>
+            <exception cref="T:System.ArgumentException">Thrown when initial population is less than 1 or current population is less than or equal to initial population or count of visitors is less than or equal to zero.</exception>
+        </member>
+    </members>
+</doc>

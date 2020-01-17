@@ -1,8 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1", "Task1\Task1.csproj", "{CD00BC01-25FE-4122-A257-DE997B66374C}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task1", "Task1\Task1.csproj", "{CD00BC01-25FE-4122-A257-DE997B66374C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1.Tests", "Task1.Tests\Task1.Tests.csproj", "{3DA65859-D3B2-4D21-95F7-391FAC82EA28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task1.Tests", "Task1.Tests\Task1.Tests.csproj", "{3DA65859-D3B2-4D21-95F7-391FAC82EA28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +21,11 @@ Global
 		{3DA65859-D3B2-4D21-95F7-391FAC82EA28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DA65859-D3B2-4D21-95F7-391FAC82EA28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DA65859-D3B2-4D21-95F7-391FAC82EA28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA67DB97-F1AF-4BAE-B45B-ECB64F38B9FD}
 	EndGlobalSection
 EndGlobal

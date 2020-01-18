@@ -22,7 +22,7 @@ namespace Task1
         {
             if (initialPopulation <= 0 || currentPopulation <= 0 || visitors <= 0)
             {
-                throw new ArgumentException("Invalid parameter values.");
+                throw new ArgumentException("Parameters initialPopulation, currentPopulation and visitors can not be less or equal to zero.");
             }
 
             if (percent < 0 || percent > 100)

@@ -20,9 +20,19 @@ namespace Task1
         /// <exception cref="ArgumentOutOfRangeException">Thrown when percent is less than zero or greater than hundred.</exception>
         public static int GetYears(int initialPopulation, double percent, int visitors, int currentPopulation)
         {
-            if (initialPopulation <= 0 || currentPopulation <= 0 || visitors <= 0)
+            if (initialPopulation <= 0)
             {
-                throw new ArgumentException("Parameters initialPopulation, currentPopulation and visitors can not be less or equal to zero.");
+                throw new ArgumentException("Value cannot be greater than zero.", nameof(initialPopulation));
+            }
+
+            if (currentPopulation <= 0)
+            {
+                throw new ArgumentException("Value cannot be greater than zero.", nameof(currentPopulation));
+            }
+
+            if (visitors <= 0)
+            {
+                throw new ArgumentException("Value cannot be greater than zero.", nameof(visitors));
             }
 
             if (percent < 0 || percent > 100)

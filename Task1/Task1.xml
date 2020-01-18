@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Task1</name>
+    </assembly>
+    <members>
+        <member name="T:Task1.Population">
+            <summary >
+            Сlass Population.
+            </summary >
+        </member>
+        <member name="M:Task1.Population.GetYears(System.Int32,System.Double,System.Int32,System.Int32)">
+            <summary >
+            Algorith of finding time to reach the current population level.
+            </summary >
+            <param  name = " initialPopulation " > Initial population value. </param >
+            <param  name = " percent " > Population growth rate. </param >
+            <param  name = " visitors " > Number of visitors. </param >
+            <param  name = " currentPopulation " > Current population. </param >
+            <exception cref="T:System.ArgumentException">Throw when
+            initialPopulation or percent or visitors are less than 0 or equal 0.
+            </exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">Throw then percent is greater than 100
+            or less than 0.
+            </exception>
+            <returns>Time to reach the current population level.  </returns>
+        </member>
+        <member name="T:Task1.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Task1.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Task1.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -5,8 +5,6 @@
 namespace Task1
 {
     using System;
-    using System.Reflection;
-    using System.Resources;
 
     /// <summary >
     /// Сlass Population.
@@ -29,7 +27,6 @@ namespace Task1
         /// <returns>Time to reach the current population level.  </returns>
         public static int GetYears(int initialPopulation, double percent, int visitors, int currentPopulation)
         {
-            // put your code here
             if (initialPopulation <= 0)
             {
                 throw new ArgumentException("Initial population cannot be less or equals zero.");
@@ -58,7 +55,6 @@ namespace Task1
             }
 
             return result;
-            throw new NotImplementedException();
         }
     }
 }

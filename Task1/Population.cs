@@ -23,9 +23,19 @@ namespace Task1
         /// <returns>Number of years.</returns>
         public static int GetYears(int initialPopulation, double percent, int visitors, int currentPopulation)
         {
-            if (initialPopulation <= 0 | currentPopulation <= 0 | visitors <= 0)
+            if (initialPopulation <= 0)
             {
-                throw new ArgumentException("initialPopulation or currentPopulation or visitors <= 0");
+                throw new ArgumentException("initialPopulation <= 0", nameof(initialPopulation));
+            }
+
+            if (currentPopulation <= 0)
+            {
+                throw new ArgumentException("currentPopulation <= 0", nameof(currentPopulation));
+            }
+
+            if (visitors <= 0)
+            {
+                throw new ArgumentException("visitors <= 0", nameof(visitors));
             }
 
             if (percent < 0 | percent > 100)
